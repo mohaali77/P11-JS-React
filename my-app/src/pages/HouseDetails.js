@@ -1,3 +1,11 @@
+import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
+
 export function HouseDetails() {
-    return < h1>HouseDetailsDetails</h1>
+    return <div>
+        <Header />
+        < h1>HouseDetails</h1>
+        <Footer />
+    </div>
+
 }
