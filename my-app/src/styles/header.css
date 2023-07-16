@@ -1,0 +1,41 @@
+header {
+  margin: 30px 80px 0px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 60px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 20px;
+  color: #ff6464;
+  padding: 0;
+  width: 200px;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+header nav ul li a:visited {
+  color: #ff6464;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    margin: 15px 20px 0px 15px;
+  }
+  header img {
+    height: 40px;
+  }
+  header nav ul {
+    width: 160px;
+    font-size: 17px;
+  }
+  header nav ul li {
+    text-transform: uppercase;
+  }
+}/*# sourceMappingURL=header.css.map */
