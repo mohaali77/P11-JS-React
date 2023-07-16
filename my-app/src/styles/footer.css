@@ -1,0 +1,34 @@
+footer {
+  background: black;
+  height: 209px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer img {
+  height: 40px;
+}
+footer p {
+  font-size: 24px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    background: black;
+    height: 209px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  footer img {
+    height: 40px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=footer.css.map */
