@@ -24,7 +24,7 @@ header nav ul li a:visited {
   color: #ff6464;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header {
     margin: 15px 20px 0px 15px;
   }
@@ -32,8 +32,8 @@ header nav ul li a:visited {
     height: 40px;
   }
   header nav ul {
-    width: 160px;
-    font-size: 17px;
+    width: 170px;
+    font-size: 15px;
   }
   header nav ul li {
     text-transform: uppercase;

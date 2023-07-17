@@ -20,11 +20,13 @@ header {
             padding: 0;
             width: 200px;
 
-            li a {
-                text-decoration: none;
+            li {
+                a {
+                    text-decoration: none;
 
-                &:visited {
-                    color: #ff6464;
+                    &:visited {
+                        color: #ff6464;
+                    }
                 }
             }
         }
@@ -33,7 +35,7 @@ header {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     header {
         margin: 15px 20px 0px 15px;
 
@@ -43,8 +45,8 @@ header {
 
         nav {
             ul {
-                width: 160px;
-                font-size: 17px;
+                width: 170px;
+                font-size: 15px;
 
                 li {
                     text-transform: uppercase;

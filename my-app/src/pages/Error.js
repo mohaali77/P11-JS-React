@@ -1,11 +1,10 @@
 import { Header } from "../components/Header"
-import { Footer } from "../components/Footer"
+import { ErrorComponent } from "../components/ErrorComponent"
 
 export function Error() {
     return <div>
         <Header />
-        < h1>Error</h1>
-        <Footer />
+        <ErrorComponent />
     </div>
 
 }

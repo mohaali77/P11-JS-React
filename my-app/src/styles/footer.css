@@ -15,7 +15,7 @@ footer p {
   margin: 0px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   footer {
     background: black;
     height: 209px;
