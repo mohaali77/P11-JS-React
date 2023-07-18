@@ -1,0 +1,45 @@
+#banner {
+  display: flex;
+  justify-content: center;
+  margin: 50px 80px 0px 80px;
+  position: relative;
+  align-items: center;
+}
+#banner #maskPicture {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  background: black;
+  opacity: 35%;
+  position: absolute;
+}
+#banner #bannerSentence {
+  position: absolute;
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+#banner img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  #banner {
+    margin: 15px 20px 0px 15px;
+  }
+  #banner #maskPicture {
+    height: 125px;
+  }
+  #banner img {
+    height: 125px;
+  }
+  #banner #bannerSentence {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=banner.css.map */
