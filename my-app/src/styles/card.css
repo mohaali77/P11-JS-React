@@ -1,0 +1,32 @@
+#cardSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #e8e8e8;
+  gap: 40px;
+  margin: 30px 80px 0px 80px;
+  justify-items: center;
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+#cardSection .card {
+  background-color: red;
+  height: 230px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #cardSection {
+    grid-template-columns: 1fr;
+    margin: 25px 15px 0px 15px;
+    padding: 0px;
+    background: white;
+    gap: 25px;
+  }
+  #cardSection .card {
+    background-color: red;
+    height: 230px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=card.css.map */

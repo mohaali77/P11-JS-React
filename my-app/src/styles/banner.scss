@@ -33,15 +33,18 @@
 
 @media screen and (max-width: 600px) {
     #banner {
-        margin: 15px 20px 0px 15px;
+        margin: 25px 15px 0px 15px;
 
         #maskPicture {
             height: 125px;
+            border-radius: 10px;
 
         }
 
         img {
             height: 125px;
+            border-radius: 10px;
+
         }
 
         #bannerSentence {
