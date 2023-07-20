@@ -1,9 +1,7 @@
-import pictureBanner from '../images/Image1.png'
-
-export function Banner() {
+export function Banner({ image, sentance }) {
     return <section id='banner'>
         <div id='maskPicture'></div>
-        <img src={pictureBanner} alt='' />
-        <div id='bannerSentence'>Chez vous, partout et ailleurs</div>
+        <img src={image} alt='' />
+        <div id='bannerSentence'>{sentance}</div>
     </section>
 }
