@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import { Banner } from "../../components/Banner"
 import { Card } from "../../components/Card"
 import image1 from '../../images/Image1.png'
@@ -8,6 +9,13 @@ const sentance = 'Chez vous, partout et ailleurs'
 
 
 export function Home() {
+
+    const [card, setCard] = useState([])
+
+    useEffect(() => {
+        setCard(data)
+    }, [])
+
     return <div>
         <Banner sentance={sentance} image={image1} />
         <Card data={data} image={image1} />
