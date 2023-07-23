@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export function Card({ data, image }) {
     console.log(data);
-    console.log(data.id);
     return <section id='cardSection'>
 
-        {data.map((item) => (
-            <div className='card' key={item.id}>
-                <p>ID: {item.id}</p>
-                <p>Nom: {item.title}</p>
-            </div>
+        {data.map((card) => (
+            <article className='card' key={card.id}>
+                <Link to={`/details/${card.id}`}>
+                    <div>Nom: {card.title}</div>
+                </Link>
+            </article>
         ))}
     </section>
 }
