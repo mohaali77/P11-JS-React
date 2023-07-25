@@ -24,6 +24,6 @@ export function HouseDetails() {
     }
 
     return <div>
-        < h1>HouseDetails</h1>
+        < h1>HouseDetailSs</h1>
     </div>
 }
