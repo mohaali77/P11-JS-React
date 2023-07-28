@@ -16,6 +16,10 @@ export function Home() {
         setCard(data)
     }, [])
 
+    function a() {
+
+    }
+
     return <div>
         <Banner sentance={sentance} image={image1} />
         <Card data={data} image={image1} />
