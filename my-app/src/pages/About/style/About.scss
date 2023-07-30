@@ -1,0 +1,24 @@
+#collapse {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 150px;
+
+    #collapse_band_1 {
+        height: 25%;
+        background: #FF6060;
+        border-radius: 10px 10px 0px 0px;
+
+        #collapse_band_title {}
+
+        #collapse_band_angle {}
+    }
+
+    #collapse_band_2 {
+        background: #e8e8e8;
+        height: 75%;
+        border-radius: 0px 0px 10px 10px;
+
+        #collapse_band_paragraph {}
+    }
+}
