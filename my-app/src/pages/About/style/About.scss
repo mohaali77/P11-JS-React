@@ -1,24 +1,33 @@
 #collapse {
-    height: 170px;
     display: flex;
     flex-direction: column;
     margin: 30px 150px;
+    font-size: 20px;
 
     #collapse_band_1 {
-        height: 25%;
+        height: 40px;
         background: #FF6060;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 5px 5px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffff;
+        padding: 0px 15px;
 
         #collapse_band_title {}
 
-        #collapse_band_angle {}
+        #collapse_band_angle {
+            i {}
+        }
     }
 
     #collapse_band_2 {
         background: #e8e8e8;
-        height: 75%;
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 5px 5px;
 
-        #collapse_band_paragraph {}
+        #collapse_band_paragraph {
+            color: #FF6060;
+            margin: 25px 15px 15px 15px;
+        }
     }
 }
