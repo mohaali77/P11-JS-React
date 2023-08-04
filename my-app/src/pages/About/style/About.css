@@ -1,10 +1,10 @@
-#collapse {
+.collapse {
   display: flex;
   flex-direction: column;
   margin: 30px 150px;
   font-size: 20px;
 }
-#collapse #collapse_band_1 {
+.collapse .collapse_band_1 {
   height: 40px;
   background: #FF6060;
   border-radius: 5px 5px 0px 0px;
@@ -14,30 +14,24 @@
   color: white;
   padding: 0px 15px;
 }
-#collapse #collapse_band_2 {
+.collapse .collapse_band_2 {
   background: #e8e8e8;
   border-radius: 0px 0px 5px 5px;
 }
-#collapse #collapse_band_2 #collapse_band_paragraph {
+.collapse .collapse_band_2 .collapse_band_paragraph {
   color: #FF6060;
   margin: 25px 15px 15px 15px;
 }
 
 @media screen and (max-width: 600px) {
-  #banner #maskPicture {
-    height: 200px;
-  }
-  #banner img {
-    height: 200px;
-  }
-  #collapse {
+  .collapse {
     margin: 25px 15px 0px 15px;
   }
-  #collapse #collapse_band_1 {
+  .collapse .collapse_band_1 {
     font-size: 13px;
     height: 30px;
   }
-  #collapse #collapse_band_2 {
+  .collapse .collapse_band_2 {
     font-size: 13px;
   }
 }/*# sourceMappingURL=About.css.map */
