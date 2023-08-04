@@ -30,3 +30,31 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    #banner {
+        #maskPicture {
+            height: 200px;
+        }
+
+        img {
+            height: 200px;
+        }
+    }
+
+    #collapse {
+        margin: 25px 15px 0px 15px;
+
+        #collapse_band_1 {
+            font-size: 13px;
+            height: 30px;
+        }
+
+
+        #collapse_band_2 {
+            font-size: 13px;
+
+        }
+    }
+}
