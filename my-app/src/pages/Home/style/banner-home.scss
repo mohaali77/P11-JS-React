@@ -1,10 +1,9 @@
-#banner {
+#home-banner {
     display: flex;
     justify-content: center;
     margin: 50px 80px 0px 80px;
     position: relative;
     align-items: center;
-
 
     #maskPicture {
         height: 200px;
@@ -32,8 +31,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    #banner {
+    #home-banner {
         margin: 25px 15px 0px 15px;
+
+        .aaa {
+            height: 200px;
+        }
 
         #maskPicture {
             height: 125px;

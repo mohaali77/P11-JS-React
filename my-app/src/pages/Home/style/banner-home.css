@@ -1,0 +1,50 @@
+#home-banner {
+  display: flex;
+  justify-content: center;
+  margin: 50px 80px 0px 80px;
+  position: relative;
+  align-items: center;
+}
+#home-banner #maskPicture {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  background: black;
+  opacity: 35%;
+  position: absolute;
+}
+#home-banner #bannerSentence {
+  position: absolute;
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+#home-banner img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  #home-banner {
+    margin: 25px 15px 0px 15px;
+  }
+  #home-banner .aaa {
+    height: 200px;
+  }
+  #home-banner #maskPicture {
+    height: 125px;
+    border-radius: 10px;
+  }
+  #home-banner img {
+    height: 125px;
+    border-radius: 10px;
+  }
+  #home-banner #bannerSentence {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=banner-home.css.map */
