@@ -5,6 +5,7 @@ export function Card({ data }) {
     return <section id='cardSection'>
 
         {data.map((card) => (
+
             <article className='card' key={card.id}>
                 <Link to={`/details/${card.id}`}>
                     <div className="card_title">{card.title}</div>
@@ -12,6 +13,7 @@ export function Card({ data }) {
                     <img src={card.cover} alt="" />
                 </Link>
             </article>
+
         ))}
     </section>
 }
