@@ -1,0 +1,27 @@
+.information {
+  margin: 0px 80px;
+  color: #FF6060;
+}
+.information .information_titleLocation_namePicture {
+  display: flex;
+  justify-content: space-between;
+}
+.information .information_titleLocation_namePicture .information_title_location .information_title {
+  font-size: 32px;
+  margin: 0px 0px 10px 0px;
+}
+.information .information_titleLocation_namePicture .information_name_picture {
+  display: flex;
+  align-items: center;
+}
+.information .information_titleLocation_namePicture .information_name_picture .information_name {
+  margin: 0;
+  font-size: 18px;
+  width: 50%;
+  font-weight: 100;
+}
+.information .information_titleLocation_namePicture .information_name_picture .information_picture {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}/*# sourceMappingURL=housedetails.css.map */
