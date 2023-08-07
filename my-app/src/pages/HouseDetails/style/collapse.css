@@ -1,14 +1,16 @@
 @charset "UTF-8";
-.collapse_container_about {
+.collapse_container_housedetails {
   margin: 0px 80px 100px 80px;
+  display: flex;
+  justify-content: space-between;
 }
-.collapse_container_about .collapse {
+.collapse_container_housedetails .collapse {
   display: flex;
   flex-direction: column;
-  margin: 30px 0px;
   font-size: 20px;
+  width: 47%;
 }
-.collapse_container_about .collapse .collapse_band_1 {
+.collapse_container_housedetails .collapse .collapse_band_1 {
   height: 40px;
   background: #FF6060;
   border-radius: 5px;
@@ -18,13 +20,13 @@
   color: white;
   padding: 0px 15px;
 }
-.collapse_container_about .collapse .collapse_band_1 i {
+.collapse_container_housedetails .collapse .collapse_band_1 i {
   transition: transform 0.5s ease;
 }
-.collapse_container_about .collapse .collapse_band_1 .rotate {
+.collapse_container_housedetails .collapse .collapse_band_1 .rotate {
   transform: rotate(180deg);
 }
-.collapse_container_about .collapse .collapse_band_2 {
+.collapse_container_housedetails .collapse .collapse_band_2 {
   background: #e8e8e8;
   border-radius: 0px 0px 5px 5px;
   opacity: 0;
@@ -32,11 +34,11 @@
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-.collapse_container_about .collapse .collapse_band_2 .collapse_band_paragraph {
+.collapse_container_housedetails .collapse .collapse_band_2 .collapse_band_paragraph {
   color: #FF6060;
   margin: 25px 15px 15px 15px;
 }
-.collapse_container_about .collapse .collapse_band_2_show {
+.collapse_container_housedetails .collapse .collapse_band_2_show {
   opacity: 1;
   /* Lorsque la classe 'show' est présente, faites apparaître la div avec une opacité de 1 */
   max-height: 400px;
@@ -54,4 +56,4 @@
   .collaspe_container .collapse .collapse_band_2 {
     font-size: 13px;
   }
-}/*# sourceMappingURL=collapse-about.css.map */
+}/*# sourceMappingURL=collapse.css.map */

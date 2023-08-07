@@ -3,8 +3,13 @@ import { useParams, Navigate } from "react-router-dom";
 import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
 import data from '../../data/data.json'
-import '../HouseDetails/style/housedetails.css'
+import './style/collapse.css'
+import './style/housedetails.css'
+import './style/rating.css'
+import './style/slideshow.css'
+import image2 from '../../images/Image2.png'
 import profile from '../../images/Image1.png'
+import { Collapse } from "../../components/Collapse";
 
 export function HouseDetails() {
 
@@ -28,8 +33,8 @@ export function HouseDetails() {
     }
 
     return <>
-        <Slideshow />
-        <section className="information">
+        <Slideshow image={image2} />
+        <section className="information_container">
             <div className="information_titleLocation_namePicture">
                 <div className="information_title_location">
                     <h1 className="information_title">Cozy loft on the Canal Saint-Martin</h1>
@@ -48,6 +53,10 @@ export function HouseDetails() {
                 </ul>
                 <Rating />
             </div>
+        </section>
+        <section className="collapse_container_housedetails">
+            <Collapse />
+            <Collapse />
         </section>
     </>
 }

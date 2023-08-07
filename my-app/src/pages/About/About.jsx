@@ -7,7 +7,7 @@ import image2 from '../../images/Image2.png'
 export function About() {
     return <>
         < Banner page='about' image={image2} />
-        <section className='collaspe_container'>
+        <section className='collapse_container_about'>
             < Collapse
                 title='Fiabilité'
                 paragraph='Les annonces postées sur Kasa garantissent une fiabilité totale.

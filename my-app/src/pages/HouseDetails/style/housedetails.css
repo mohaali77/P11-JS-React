@@ -1,27 +1,49 @@
-.information {
+.information_container {
   margin: 0px 80px;
   color: #FF6060;
 }
-.information .information_titleLocation_namePicture {
+.information_container .information_titleLocation_namePicture {
   display: flex;
   justify-content: space-between;
 }
-.information .information_titleLocation_namePicture .information_title_location .information_title {
+.information_container .information_titleLocation_namePicture .information_title_location .information_title {
   font-size: 32px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 5px 0px;
 }
-.information .information_titleLocation_namePicture .information_name_picture {
+.information_container .information_titleLocation_namePicture .information_name_picture {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
-.information .information_titleLocation_namePicture .information_name_picture .information_name {
+.information_container .information_titleLocation_namePicture .information_name_picture .information_name {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   width: 50%;
   font-weight: 100;
 }
-.information .information_titleLocation_namePicture .information_name_picture .information_picture {
+.information_container .information_titleLocation_namePicture .information_name_picture .information_picture {
   height: 60px;
   width: 60px;
   border-radius: 100%;
+}
+.information_container .information_tag_rating {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.information_container .information_tag_rating .information_list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.information_container .information_tag_rating .information_list .information_tag {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 0px;
+  background-color: #FF6060;
+  color: #fff;
+  font-weight: 100;
+  font-size: 12px;
+  padding: 2px 30px;
+  border-radius: 10px;
 }/*# sourceMappingURL=housedetails.css.map */

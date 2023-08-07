@@ -1,0 +1,36 @@
+.slideshow_container_housedetails {
+    height: 380px;
+    margin: 20px 80px 20px 80px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    .fa-angle-right {
+        position: absolute;
+        color: #fff;
+        top: 38%;
+        right: 10px;
+        font-size: 95px;
+    }
+
+    .fa-angle-left {
+        position: absolute;
+        color: #fff;
+        top: 38%;
+        left: 10px;
+        font-size: 95px;
+    }
+
+    .slideshow_counter {
+        position: absolute;
+        color: #fff;
+        bottom: 30px;
+        left: 50%;
+        font-weight: bold;
+    }
+}
