@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 
-export function Collapse({ title, paragraph }) {
+export function Collapse({ title, paragraph, equipments }) {
+    console.log(equipments);
 
     const angleBtn = useRef(null);
     const collapseOpenClose = useRef(null);
@@ -19,6 +20,10 @@ export function Collapse({ title, paragraph }) {
             </div>
             <div ref={collapseOpenClose} className="collapse_band_2">
                 <p className="collapse_band_paragraph">{paragraph}</p>
+                {equipments.map((equipments, index) => (
+                    <p key={index} className="collapse_band_paragraph">{equipments}</p>
+                ))}
+
             </div>
         </div>
     </>

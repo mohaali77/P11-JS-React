@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
+import { Collapse } from "../../components/Collapse";
 import data from '../../data/data.json'
+import image2 from '../../images/Image2.png'
+import profile from '../../images/Image1.png'
 import './style/collapse.css'
 import './style/housedetails.css'
 import './style/rating.css'
 import './style/slideshow.css'
-import image2 from '../../images/Image2.png'
-import profile from '../../images/Image1.png'
-import { Collapse } from "../../components/Collapse";
 
 export function HouseDetails() {
 
@@ -22,8 +22,6 @@ export function HouseDetails() {
     // Récupérer l'ID de l'URL
     const { id } = useParams();
 
-    console.log(id);
-
     // Recherchez la maison correspondant à l'ID dans la liste
     const selectedHouse = data.find((house) => house.id === id);
 
@@ -32,31 +30,39 @@ export function HouseDetails() {
         return <Navigate to="/error" />;
     }
 
+    const getDataFromID = data.find(obj => obj.id === id);
+
+    if (getDataFromID) {
+        console.log(getDataFromID); // Cet objet a l'ID correspondant à celui de l'URL
+    } else {
+        console.log("Aucun objet trouvé avec cet ID");
+    }
+
     return <>
         <Slideshow image={image2} />
         <section className="information_container">
             <div className="information_titleLocation_tagList">
                 <div className="information_title_location">
-                    <h1 className="information_title">Cozy loft on the Canal Saint-Martin</h1>
-                    <div className="information_location">Paris, Ile-de-France</div>
+                    <h1 className="information_title">{getDataFromID.title}</h1>
+                    <div className="information_location">{getDataFromID.location}</div>
                 </div>
                 <ul className="information_tagList">
-                    <h3 className="information_tag">tag</h3>
-                    <h3 className="information_tag">tag</h3>
-                    <h3 className="information_tag">tag</h3>
+                    {getDataFromID.tags.map((tag, index) => (
+                        <h3 key={index} className="information_tag">{tag}</h3>
+                    ))}
                 </ul>
             </div>
             <div className="information_namePicture_rating">
                 <div className="information_name_picture">
-                    <h2 className="information_name">Nom Prénom</h2>
-                    <img className="information_picture" src={profile} alt="" />
+                    <h2 className="information_name">{getDataFromID.host.name}</h2>
+                    <img className="information_picture" src={getDataFromID.host.picture} alt="" />
                 </div>
                 <Rating />
             </div>
         </section>
         <section className="collapse_container_housedetails">
-            <Collapse />
-            <Collapse />
+            <Collapse title='Description' paragraph={getDataFromID.description} />
+            <Collapse title='Equipement' equipments={getDataFromID.equipments} />
         </section>
     </>
 }
