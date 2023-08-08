@@ -1,11 +1,17 @@
-.rating-container i {
+.rating-container .fa-star {
   font-size: 23px;
   padding: 0px 5px;
 }
+.rating-container .no-star {
+  color: #e8e8e8;
+}
 
 @media screen and (max-width: 600px) {
-  .rating-container i {
+  .rating-container .fa-star {
     font-size: 15px;
     padding: 0px 3px;
+  }
+  .rating-container .no-star {
+    color: #e8e8e8;
   }
 }/*# sourceMappingURL=rating.css.map */

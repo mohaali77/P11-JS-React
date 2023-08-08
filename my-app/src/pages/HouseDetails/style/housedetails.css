@@ -8,7 +8,7 @@
 .information_container .information_titleLocation_tagList {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 50%;
   flex-wrap: wrap;
 }
 .information_container .information_titleLocation_tagList .information_title_location .information_title {
