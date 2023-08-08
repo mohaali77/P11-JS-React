@@ -22,11 +22,12 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 .information_container .information_titleLocation_tagList .information_tagList .information_tag {
   display: flex;
   align-items: center;
-  margin: 0px 10px 0px 0px;
+  margin: 5px 10px 5px 0px;
   background-color: #FF6060;
   color: #fff;
   font-weight: 100;
@@ -85,7 +86,7 @@
   .information_container .information_titleLocation_tagList .information_tagList .information_tag {
     display: flex;
     align-items: center;
-    margin: 0px 10px 0px 0px;
+    margin: 5px 10px 5px 0px;
     background-color: #FF6060;
     color: #fff;
     font-weight: 100;

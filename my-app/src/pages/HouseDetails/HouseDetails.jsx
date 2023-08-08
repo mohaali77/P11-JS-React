@@ -26,9 +26,10 @@ export function HouseDetails() {
     }
 
     const getDataFromID = data.find(obj => obj.id === id);
+    console.log(getDataFromID.pictures);
 
     return <>
-        <Slideshow image={image2} />
+        <Slideshow pictures={getDataFromID.pictures} image={image2} />
         <section className="information_container">
             <div className="information_titleLocation_tagList">
                 <div className="information_title_location">

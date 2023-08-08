@@ -1,4 +1,5 @@
-export function Slideshow({ image }) {
+export function Slideshow({ image, pictures }) {
+    console.log(pictures);
     return <>
         <section className="slideshow_container_housedetails">
             <img src={image} alt="" />
