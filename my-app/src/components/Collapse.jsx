@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
 
-export function Collapse({ title, paragraph, equipments }) {
-    console.log(equipments);
+export function Collapse({ equipments, title, paragraph }) {
 
     const angleBtn = useRef(null);
     const collapseOpenClose = useRef(null);
-
 
     const handleClick = () => {
         angleBtn.current.classList.toggle('rotate');
@@ -20,10 +18,11 @@ export function Collapse({ title, paragraph, equipments }) {
             </div>
             <div ref={collapseOpenClose} className="collapse_band_2">
                 <p className="collapse_band_paragraph">{paragraph}</p>
-                {equipments.map((equipments, index) => (
-                    <p key={index} className="collapse_band_paragraph">{equipments}</p>
-                ))}
-
+                {equipments ?
+                    equipments.map((equipment, index) => (
+                        <p key={index} className="collapse_band_equipments">{equipment}</p>
+                    )) : <p className="collapse_band_equipments"></p>
+                }
             </div>
         </div>
     </>

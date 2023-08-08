@@ -5,7 +5,6 @@ import { Rating } from '../../components/Rating'
 import { Collapse } from "../../components/Collapse";
 import data from '../../data/data.json'
 import image2 from '../../images/Image2.png'
-import profile from '../../images/Image1.png'
 import './style/collapse.css'
 import './style/housedetails.css'
 import './style/rating.css'
@@ -13,14 +12,10 @@ import './style/slideshow.css'
 
 export function HouseDetails() {
 
-    const [card, setCard] = useState([])
-
-    useEffect(() => {
-        setCard(data)
-    }, [])
-
     // Récupérer l'ID de l'URL
     const { id } = useParams();
+
+    console.log(data);
 
     // Recherchez la maison correspondant à l'ID dans la liste
     const selectedHouse = data.find((house) => house.id === id);
@@ -31,12 +26,6 @@ export function HouseDetails() {
     }
 
     const getDataFromID = data.find(obj => obj.id === id);
-
-    if (getDataFromID) {
-        console.log(getDataFromID); // Cet objet a l'ID correspondant à celui de l'URL
-    } else {
-        console.log("Aucun objet trouvé avec cet ID");
-    }
 
     return <>
         <Slideshow image={image2} />
@@ -57,7 +46,7 @@ export function HouseDetails() {
                     <h2 className="information_name">{getDataFromID.host.name}</h2>
                     <img className="information_picture" src={getDataFromID.host.picture} alt="" />
                 </div>
-                <Rating />
+                <Rating rating={getDataFromID.rating} />
             </div>
         </section>
         <section className="collapse_container_housedetails">
