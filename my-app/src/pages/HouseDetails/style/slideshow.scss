@@ -34,3 +34,37 @@
         font-weight: bold;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    .slideshow_container_housedetails {
+        height: 300px;
+        margin: 20px 15px 20px 15px;
+
+        img {
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .fa-angle-right {
+            top: 45%;
+            right: 10px;
+            font-size: 40px;
+        }
+
+        .fa-angle-left {
+            top: 45%;
+            left: 10px;
+            font-size: 40px;
+        }
+
+        .slideshow_counter {
+            position: absolute;
+            color: #fff;
+            bottom: 30px;
+            left: 50%;
+            font-weight: bold;
+            display: none;
+        }
+    }
+}

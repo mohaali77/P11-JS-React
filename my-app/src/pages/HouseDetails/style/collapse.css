@@ -46,14 +46,23 @@
 }
 
 @media screen and (max-width: 600px) {
-  .collaspe_container .collapse {
-    margin: 25px 15px 0px 15px;
+  .collapse_container_housedetails {
+    margin: 0px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
   }
-  .collaspe_container .collapse .collapse_band_1 {
+  .collapse_container_housedetails .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .collapse_container_housedetails .collapse .collapse_band_1 {
     font-size: 13px;
     height: 30px;
   }
-  .collaspe_container .collapse .collapse_band_2 {
+  .collapse_container_housedetails .collapse .collapse_band_1 i {
+    font-size: 20px;
+  }
+  .collapse_container_housedetails .collapse .collapse_band_2 {
     font-size: 13px;
   }
 }/*# sourceMappingURL=collapse.css.map */

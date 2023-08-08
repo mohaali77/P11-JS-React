@@ -35,22 +35,22 @@ export function HouseDetails() {
     return <>
         <Slideshow image={image2} />
         <section className="information_container">
-            <div className="information_titleLocation_namePicture">
+            <div className="information_titleLocation_tagList">
                 <div className="information_title_location">
                     <h1 className="information_title">Cozy loft on the Canal Saint-Martin</h1>
                     <div className="information_location">Paris, Ile-de-France</div>
                 </div>
-                <div className="information_name_picture">
-                    <h2 className="information_name">Nom Prénom</h2>
-                    <img className="information_picture" src={profile} alt="" />
-                </div>
-            </div>
-            <div className="information_tag_rating">
-                <ul className="information_list">
+                <ul className="information_tagList">
                     <h3 className="information_tag">tag</h3>
                     <h3 className="information_tag">tag</h3>
                     <h3 className="information_tag">tag</h3>
                 </ul>
+            </div>
+            <div className="information_namePicture_rating">
+                <div className="information_name_picture">
+                    <h2 className="information_name">Nom Prénom</h2>
+                    <img className="information_picture" src={profile} alt="" />
+                </div>
                 <Rating />
             </div>
         </section>

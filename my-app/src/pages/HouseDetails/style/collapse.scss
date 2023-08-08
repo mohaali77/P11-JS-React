@@ -56,13 +56,23 @@
 }
 
 @media screen and (max-width: 600px) {
-    .collaspe_container {
+    .collapse_container_housedetails {
+        margin: 0px 20px 30px 20px;
+        display: flex;
+        flex-direction: column;
+
+
         .collapse {
-            margin: 25px 15px 0px 15px;
+            width: 100%;
+            margin-bottom: 20px;
 
             .collapse_band_1 {
                 font-size: 13px;
                 height: 30px;
+
+                i {
+                    font-size: 20px;
+                }
             }
 
 

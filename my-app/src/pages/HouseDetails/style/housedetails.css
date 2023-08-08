@@ -1,42 +1,29 @@
 .information_container {
-  margin: 0px 80px;
+  margin: 0px 80px 20px 80px;
   color: #FF6060;
-}
-.information_container .information_titleLocation_namePicture {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.information_container .information_titleLocation_namePicture .information_title_location .information_title {
+.information_container .information_titleLocation_tagList {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  flex-wrap: wrap;
+}
+.information_container .information_titleLocation_tagList .information_title_location .information_title {
   font-size: 32px;
   margin: 0px 0px 5px 0px;
 }
-.information_container .information_titleLocation_namePicture .information_name_picture {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.information_container .information_titleLocation_tagList .information_title_location .information_location {
+  margin-bottom: 20px;
 }
-.information_container .information_titleLocation_namePicture .information_name_picture .information_name {
-  margin: 0;
-  font-size: 16px;
-  width: 50%;
-  font-weight: 100;
-}
-.information_container .information_titleLocation_namePicture .information_name_picture .information_picture {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-}
-.information_container .information_tag_rating {
-  margin: 20px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-.information_container .information_tag_rating .information_list {
+.information_container .information_titleLocation_tagList .information_tagList {
   padding: 0;
   margin: 0;
   display: flex;
 }
-.information_container .information_tag_rating .information_list .information_tag {
+.information_container .information_titleLocation_tagList .information_tagList .information_tag {
   display: flex;
   align-items: center;
   margin: 0px 10px 0px 0px;
@@ -46,4 +33,88 @@
   font-size: 12px;
   padding: 2px 30px;
   border-radius: 10px;
+}
+.information_container .information_namePicture_rating {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.information_container .information_namePicture_rating .information_name_picture {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.information_container .information_namePicture_rating .information_name_picture .information_name {
+  margin: 0;
+  font-size: 16px;
+  width: 50%;
+  font-weight: 100;
+}
+.information_container .information_namePicture_rating .information_name_picture .information_picture {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .information_container {
+    margin: 0px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .information_container .information_titleLocation_tagList {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .information_container .information_titleLocation_tagList .information_title_location .information_title {
+    font-size: 25px;
+    margin: 0px 0px 10px 0px;
+  }
+  .information_container .information_titleLocation_tagList .information_title_location .information_location {
+    margin-bottom: 15px;
+  }
+  .information_container .information_titleLocation_tagList .information_tagList {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .information_container .information_titleLocation_tagList .information_tagList .information_tag {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 0px 0px;
+    background-color: #FF6060;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+    padding: 2px 30px;
+    border-radius: 5px;
+  }
+  .information_container .information_namePicture_rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .information_container .information_namePicture_rating .information_name_picture {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .information_container .information_namePicture_rating .information_name_picture .information_name {
+    margin: 0;
+    font-size: 14px;
+    width: 50%;
+    font-weight: 100;
+  }
+  .information_container .information_namePicture_rating .information_name_picture .information_picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+  }
 }/*# sourceMappingURL=housedetails.css.map */
