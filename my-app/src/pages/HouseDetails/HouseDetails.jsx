@@ -26,7 +26,6 @@ export function HouseDetails() {
     }
 
     const getDataFromID = data.find(obj => obj.id === id);
-    console.log(getDataFromID.pictures);
 
     return <>
         <Slideshow pictures={getDataFromID.pictures} image={image2} />
