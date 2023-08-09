@@ -2,31 +2,26 @@ import { useState } from "react";
 
 export function Slideshow({ image, pictures }) {
 
-    /*pictures.map((picture, index) => (
-        console.log(picture)
-    ));*/
-
-    const [count, setCount] = useState(0); // Initialisation du compteur à 0
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     const handleNavigateLeft = () => {
         console.log('left')
-        setCount(count - 1); // Incrémente le compteur de 1
-        console.log(count);
+        setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
 
     }
 
     const handleNavigateRight = () => {
         console.log('right');
-        setCount(count + 1); // Incrémente le compteur de 1
-        console.log(count);
+        setCurrentImageIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
+
     }
 
     return <>
         <section className="slideshow_container_housedetails">
-            <img src={image} alt="" />
+            <img src={pictures[currentImageIndex]} alt='' />
             <i onClick={handleNavigateLeft} className="fa-solid fa-angle-left"></i>
             <i onClick={handleNavigateRight} className="fa-solid fa-angle-right"></i>
-            <div className="slideshow_counter">1/4</div>
+            <div className="slideshow_counter">{currentImageIndex + 1}/{pictures.length}</div>
         </section>
     </>
 }
