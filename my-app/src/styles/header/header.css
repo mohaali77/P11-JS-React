@@ -17,6 +17,9 @@ header nav ul {
   padding: 0;
   width: 200px;
 }
+header nav ul .actualPage {
+  border-bottom: 1px solid #ff6464;
+}
 header nav ul li a {
   text-decoration: none;
 }

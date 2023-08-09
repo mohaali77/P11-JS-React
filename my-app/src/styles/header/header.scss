@@ -20,6 +20,10 @@ header {
             padding: 0;
             width: 200px;
 
+            .actualPage {
+                border-bottom: 1px solid #ff6464;
+            }
+
             li {
                 a {
                     text-decoration: none;

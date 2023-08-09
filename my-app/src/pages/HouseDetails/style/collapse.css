@@ -22,6 +22,7 @@
 }
 .collapse_container_housedetails .collapse .collapse_band_1 i {
   transition: transform 0.5s ease;
+  cursor: pointer;
 }
 .collapse_container_housedetails .collapse .collapse_band_1 .rotate {
   transform: rotate(180deg);
