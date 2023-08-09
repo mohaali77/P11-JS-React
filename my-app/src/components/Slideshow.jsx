@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function Slideshow({ image, pictures }) {
+export function Slideshow({ pictures }) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

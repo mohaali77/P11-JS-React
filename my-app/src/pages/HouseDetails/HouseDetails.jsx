@@ -4,7 +4,6 @@ import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
 import { Collapse } from "../../components/Collapse";
 import data from '../../data/data.json'
-import image2 from '../../images/Image2.png'
 import './style/collapse.css'
 import './style/housedetails.css'
 import './style/rating.css'
@@ -28,7 +27,7 @@ export function HouseDetails() {
     const getDataFromID = data.find(obj => obj.id === id);
 
     return <>
-        <Slideshow pictures={getDataFromID.pictures} image={image2} />
+        <Slideshow pictures={getDataFromID.pictures} />
         <section className="information_container">
             <div className="information_titleLocation_tagList">
                 <div className="information_title_location">
