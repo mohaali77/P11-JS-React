@@ -1,6 +1,7 @@
+//On récupère la note transmisent par la page parente
 export function Rating({ rating }) {
-    console.log(rating);
 
+    //on crée des constantes pour chaque étoiles de 0 à 5
     const zeroStarRate = '0'
     const oneStarRate = '1'
     const twoStarRate = '2'
@@ -8,6 +9,7 @@ export function Rating({ rating }) {
     const fourStarRate = '4'
     const fiveStarRate = '5'
 
+    //on crée des variables pour chaque étoiles de 0 à 5
     let isZeroTrue = false
     let isOneTrue = false
     let isTwoTrue = false
@@ -15,7 +17,9 @@ export function Rating({ rating }) {
     let isFourTrue = false
     let isFiveTrue = false
 
+    //Si la valeur de la note transmise est égal à une des constantes. 
     if (zeroStarRate === rating) {
+        //On définis la variable correspondante au nombre d'étoile comme true. 
         isZeroTrue = true;
     } else if (oneStarRate === rating) {
         isOneTrue = true
@@ -29,7 +33,9 @@ export function Rating({ rating }) {
         isFiveTrue = true
     }
 
-
+    /*Pour chaque possibilité de note, on créer une condition. Par exemple, si isZero = true,
+    cela signifie que la note de la maison est de 0, donc on créé les icones étoiles
+    en attribuant pour chacune des icone la class 'no-star' qui rendra les étoiles grises.*/
     return <>
         <div className="rating-container">
             {isZeroTrue ?

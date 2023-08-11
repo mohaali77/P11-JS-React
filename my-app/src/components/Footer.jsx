@@ -1,3 +1,4 @@
+//Import Fichiers
 import logo from '../logo/LOGO_footer.png'
 
 export function Footer() {

@@ -1,3 +1,4 @@
+//On récupère les données transmisent par les pages parentes
 export function Banner({ image, sentance, page }) {
 
     return <section id={`${page}-banner`}>

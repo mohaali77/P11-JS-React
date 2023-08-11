@@ -1,8 +1,11 @@
-import './style/collapse-about/collapse-about.css'
-import "./style/banner-about/banner-about.css"
+//Import Composants
 import { Banner } from '../../components/Banner'
 import { Collapse } from '../../components/Collapse'
+//Import Fichiers
 import image2 from '../../images/Image2.png'
+//Import CSS
+import './style/collapse-about/collapse-about.css'
+import "./style/banner-about/banner-about.css"
 
 export function About() {
     return <>

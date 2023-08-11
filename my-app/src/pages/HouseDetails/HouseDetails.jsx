@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+//Import Fonctionnalités, Hook, Bibliothèque...
 import { useParams, Navigate } from "react-router-dom";
+//Import Composants
 import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
 import { Collapse } from "../../components/Collapse";
 import data from '../../data/data.json'
+//Import CSS
 import './style/collapse-housedetails/collapse-housedetails.css'
 import './style/housedetails/housedetails.css'
 import './style/rating/rating.css'
@@ -14,17 +16,13 @@ export function HouseDetails() {
     // Récupérer l'ID de l'URL
     const { id } = useParams();
 
-    console.log(data);
+    // On récupère l'objet possedant le même ID que celui dans l'URL
+    const getDataFromID = data.find(obj => obj.id === id);
 
-    // Recherchez la maison correspondant à l'ID dans la liste
-    const selectedHouse = data.find((house) => house.id === id);
-
-    // Si l'ID est invalide ou ne correspond pas à une maison existante, redirigez vers la page d'erreur
-    if (!selectedHouse) {
+    // Si aucun ID n'est trouvé, on redirige vers la page d'erreur
+    if (!getDataFromID) {
         return <Navigate to="/error" />;
     }
-
-    const getDataFromID = data.find(obj => obj.id === id);
 
     return <>
         <Slideshow pictures={getDataFromID.pictures} />
