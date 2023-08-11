@@ -1,5 +1,5 @@
-import "./style/card.css"
-import "./style/banner-home.css"
+import "./style/card/card.css"
+import "./style/banner-home/banner-home.css"
 import { useState, useEffect } from "react"
 import { Banner } from "../../components/Banner"
 import { Card } from "../../components/Card"
