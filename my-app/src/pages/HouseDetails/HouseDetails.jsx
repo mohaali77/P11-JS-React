@@ -4,10 +4,10 @@ import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
 import { Collapse } from "../../components/Collapse";
 import data from '../../data/data.json'
-import './style/collapse.css'
-import './style/housedetails.css'
-import './style/rating.css'
-import './style/slideshow.css'
+import './style/collapse-house/collapse-house.css'
+import './style/housedetails/housedetails.css'
+import './style/rating/rating.css'
+import './style/slideshow/slideshow.css'
 
 export function HouseDetails() {
 
