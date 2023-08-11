@@ -6,6 +6,7 @@ export function Slideshow({ pictures }) {
     //on définit un state réprésentant l'index initial comme 0
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+    //Au clic, 
     const handleNavigateLeft = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
 
