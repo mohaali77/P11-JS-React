@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.collapse_container_housedetails {
+  margin: 0px 80px 100px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.collapse_container_housedetails .collapse {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 47%;
+}
+.collapse_container_housedetails .collapse .collapse_band_1 {
+  height: 40px;
+  background: #FF6060;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 15px;
+}
+.collapse_container_housedetails .collapse .collapse_band_1 i {
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.collapse_container_housedetails .collapse .collapse_band_1 .rotate {
+  transform: rotate(180deg);
+}
+.collapse_container_housedetails .collapse .collapse_band_2 {
+  background: #e8e8e8;
+  border-radius: 0px 0px 5px 5px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.collapse_container_housedetails .collapse .collapse_band_2 .collapse_band_paragraph {
+  color: #FF6060;
+  margin: 25px 15px 15px 15px;
+}
+.collapse_container_housedetails .collapse .collapse_band_2 .collapse_band_equipments {
+  color: #FF6060;
+  margin: 5px 15px 5px 15px;
+}
+.collapse_container_housedetails .collapse .collapse_band_2_show {
+  opacity: 1;
+  /* Lorsque la classe 'show' est présente, faites apparaître la div avec une opacité de 1 */
+  max-height: 400px;
+  /* Lorsque la classe 'show' est présente, définissez une hauteur maximale pour faire apparaître la div */
+}
+
+@media screen and (max-width: 600px) {
+  .collapse_container_housedetails {
+    margin: 0px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .collapse_container_housedetails .collapse {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .collapse_container_housedetails .collapse .collapse_band_1 {
+    font-size: 13px;
+    height: 30px;
+  }
+  .collapse_container_housedetails .collapse .collapse_band_1 i {
+    font-size: 20px;
+  }
+  .collapse_container_housedetails .collapse .collapse_band_2 {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=collapse-housedetails.css.map */

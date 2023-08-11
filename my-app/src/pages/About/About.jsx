@@ -1,5 +1,5 @@
-import './style/collapse-about.css'
-import "./style/banner-about.css"
+import './style/collapse-about/collapse-about.css'
+import "./style/banner-about/banner-about.css"
 import { Banner } from '../../components/Banner'
 import { Collapse } from '../../components/Collapse'
 import image2 from '../../images/Image2.png'
