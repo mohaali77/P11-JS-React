@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export function Card({ data }) {
-    console.log(data);
     return <section id='cardSection'>
 
         {data.map((card) => (
