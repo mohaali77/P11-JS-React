@@ -6,19 +6,25 @@ import { useEffect, useRef } from 'react';
 
 export function Header() {
 
+    //on récupère le nom de la page présente dans l'URL.
     const getPage = useLocation();
 
+    //constant useRef DOM
     const home = useRef(null);
     const about = useRef(null);
 
-
+    //Condition : 
     useEffect(() => {
+        //Si nous sommes sur la page d'accueil, on ajoute une classe qui ajoutera une bordure en dessous 
+        // de "Accueil" dans le header. Sinon on le supprime. 
         if (getPage.pathname === '/') {
             home.current.classList.add('actualPage');
         } else {
             home.current.classList.remove('actualPage');
         }
 
+        //Si nous sommes sur la page "A propos", on ajoute une classe qui ajoutera une bordure en dessous 
+        // de "A Propos" dans le header. Sinon on le supprime.
         if (getPage.pathname === '/about') {
             about.current.classList.add('actualPage');
         } else {
