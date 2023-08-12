@@ -6,6 +6,11 @@ export function Slideshow({ pictures }) {
     //on définit un state réprésentant l'index initial comme 0
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+    let isOnePicture = false
+
+    if (pictures.length <= 1) {
+        isOnePicture = true
+    }
     //Au clic, 
     const handleNavigateLeft = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
@@ -20,9 +25,13 @@ export function Slideshow({ pictures }) {
     return <>
         <section className="slideshow_container_housedetails">
             <img src={pictures[currentImageIndex]} alt='' />
-            <i onClick={handleNavigateLeft} className="fa-solid fa-angle-left"></i>
-            <i onClick={handleNavigateRight} className="fa-solid fa-angle-right"></i>
-            <div className="slideshow_counter">{currentImageIndex + 1}/{pictures.length}</div>
+            {isOnePicture ?
+                null
+                : <> <i onClick={handleNavigateLeft} className="fa-solid fa-angle-left"></i>
+                    <i onClick={handleNavigateRight} className="fa-solid fa-angle-right"></i>
+                    <div className="slideshow_counter">{currentImageIndex + 1}/{pictures.length}</div>
+                </>
+            }
         </section>
     </>
 }
