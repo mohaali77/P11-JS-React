@@ -8,7 +8,6 @@ import data from '../../data/data.json';
 import "./style/card/card.css";
 import "./style/banner-home/banner-home.css";
 
-
 export function Home() {
     return (
         <>
