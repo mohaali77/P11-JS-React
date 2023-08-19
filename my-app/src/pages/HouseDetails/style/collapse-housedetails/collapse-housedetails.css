@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .collapse_container_housedetails {
   margin: 0px 80px 100px 80px;
   display: flex;
@@ -30,10 +29,9 @@
 .collapse_container_housedetails .collapse .collapse_band_2 {
   background: #e8e8e8;
   border-radius: 0px 0px 5px 5px;
-  opacity: 0;
-  max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 .collapse_container_housedetails .collapse .collapse_band_2 .collapse_band_paragraph {
   color: #FF6060;
@@ -44,10 +42,8 @@
   margin: 5px 15px 5px 15px;
 }
 .collapse_container_housedetails .collapse .collapse_band_2_show {
-  opacity: 1;
-  /* Lorsque la classe 'show' est présente, faites apparaître la div avec une opacité de 1 */
-  max-height: 400px;
-  /* Lorsque la classe 'show' est présente, définissez une hauteur maximale pour faire apparaître la div */
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
 }
 
 @media screen and (max-width: 600px) {

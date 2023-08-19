@@ -16,6 +16,7 @@
   top: 38%;
   right: 10px;
   font-size: 95px;
+  cursor: pointer;
 }
 .slideshow_container_housedetails .fa-angle-left {
   position: absolute;
@@ -23,6 +24,7 @@
   top: 38%;
   left: 10px;
   font-size: 95px;
+  cursor: pointer;
 }
 .slideshow_container_housedetails .slideshow_counter {
   position: absolute;
@@ -53,11 +55,6 @@
     font-size: 40px;
   }
   .slideshow_container_housedetails .slideshow_counter {
-    position: absolute;
-    color: #fff;
-    bottom: 30px;
-    left: 50%;
-    font-weight: bold;
     display: none;
   }
 }/*# sourceMappingURL=slideshow.css.map */
