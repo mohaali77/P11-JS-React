@@ -4,6 +4,7 @@ import { useParams, Navigate } from "react-router-dom";
 import { Slideshow } from '../../components/Slideshow'
 import { Rating } from '../../components/Rating'
 import { Collapse } from "../../components/Collapse";
+//Données
 import data from '../../data/data.json'
 //Import CSS
 import './style/collapse-housedetails/collapse-housedetails.css'
@@ -16,7 +17,7 @@ export function HouseDetails() {
     // Récupérer l'ID de l'URL
     const { id } = useParams();
 
-    // On récupère l'objet possedant le même ID que celui dans l'URL
+    // On récupère l'objet du tableau possedant le même ID que celui dans l'URL
     const getDataFromID = data.find(obj => obj.id === id);
 
     // Si aucun ID n'est trouvé, on redirige vers la page d'erreur

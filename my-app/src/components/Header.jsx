@@ -3,6 +3,8 @@ import logo from '../logo/LOGO_header.png'
 //Import Fonctionnalités, Hook, Bibliothèque...
 import { Link, useLocation } from 'react-router-dom'
 import { useEffect, useRef } from 'react';
+//CSS
+import '../styles/header/header.css'
 
 export function Header() {
 

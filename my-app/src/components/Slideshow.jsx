@@ -13,7 +13,6 @@ export function Slideshow({ pictures }) {
     if (pictures.length <= 1) {
         isOnePicture = true
     }
-    //Au clic, 
     const handleNavigateLeft = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
 

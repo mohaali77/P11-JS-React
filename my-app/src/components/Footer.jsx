@@ -1,5 +1,7 @@
 //Import Fichiers
 import logo from '../logo/LOGO_footer.png'
+//CSS
+import '../styles/footer/footer.css'
 
 export function Footer() {
     return <footer>
