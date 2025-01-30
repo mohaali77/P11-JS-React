@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export function Card({ data }) {
     return <section id='cardSection'>
 
+
         {
             // avec la méthode map, pour chaque cartes des données on créé un article avec ses infos respectives.  
             data.map((card) => (
